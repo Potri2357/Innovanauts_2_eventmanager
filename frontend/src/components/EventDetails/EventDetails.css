@@ -1,0 +1,33 @@
+.event-details {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .event-details h2 {
+    color: #007bff;
+  }
+  
+  .event-details p {
+    color: #555;
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .back-button:hover {
+    background: #0056b3;
+  }
+  

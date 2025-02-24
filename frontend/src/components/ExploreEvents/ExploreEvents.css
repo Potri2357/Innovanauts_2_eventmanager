@@ -1,0 +1,98 @@
+/* Explore Events Page */
+.explore-container {
+    display: flex;
+    min-height: 100vh;
+    /* Ensure full height */
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+/* Sidebar (Filters) */
+.sidebar {
+    width: 250px;
+    /* Fixed width */
+    max-width: 250px;
+    /* Prevents it from stretching */
+    min-width: 200px;
+    /* Ensures it doesn't get too small */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    flex-shrink: 0;
+    /* Prevents it from shrinking */
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    /* Takes remaining space */
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Events List */
+.events-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Event Card */
+.event-card {
+    text-decoration: none;
+    /* Removes underline */
+    color: inherit;
+    /* Keeps default text color */
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 10px);
+    transition: transform 0.2s ease-in-out;
+}
+
+.event-card:hover {
+    cursor: pointer;
+}
+
+
+.event-card h4 {
+    margin: 0 0 5px;
+    color: #007bff;
+}
+
+.event-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Responsive: Stack on small screens */
+@media (max-width: 768px) {
+    .explore-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 15px;
+    }
+
+    .event-card {
+        width: 100%;
+    }
+}

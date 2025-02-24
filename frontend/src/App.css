@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+}
+
+:root {
+  --vs-primary: rgb(255, 195, 0);
+  --vs-secondary: rgb(13, 120, 231);
+  --vs-tertiary: rgb(127, 57, 149);
+  --vs-success: rgb(6, 169, 2);
+  --vs-danger: rgb(169, 2, 89);
+  --vs-warning: rgb(243, 193, 30);
+  --vs-dark: rgb(66, 66, 66);
+  --vs-superlight: rgb(246, 246, 246);
+  --vs-green: rgb(16, 232, 138);
+  --vs-purple: rgb(127, 57, 149);
+  --vs-greentext: rgb(14, 214, 127);
+}
+
+main {
+  align-items: center;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+a {
+  color: white;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}

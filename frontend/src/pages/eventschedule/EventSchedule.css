@@ -1,0 +1,129 @@
+/* General Styling */
+body {
+  height: 2500px;
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke; /* Light blue background */
+  color: #003366; /* Dark blue text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Form Container */
+.event-form {
+  max-width: 500px;
+  height: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: whitesmoke;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Form Titles */
+.event-form h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+/* Labels & Inputs */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #003366;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Facilities Section */
+h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #003366;
+}
+
+/* Facilities Checkboxes - Inline Alignment */
+.facilities-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Space between checkboxes */
+  margin-bottom: 15px;
+}
+
+.facilities-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #003366;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #218838;
+}
+
+/* Messages */
+.success {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #0057b8;
+  padding: 15px;
+}
+
+nav button {
+  background: white;
+  color: #0057b8;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background: #003366;
+  color: white;
+}

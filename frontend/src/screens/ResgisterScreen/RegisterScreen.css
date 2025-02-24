@@ -1,0 +1,137 @@
+/* Reset styles for a clean look */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Full-screen layout with mild white background */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 20%,
+    #e3eaf5 100%
+  ); /* Brighter background */
+}
+
+/* Centered Form Container */
+.register-container {
+  width: 100%;
+  max-width: 500px; /* Increased width */
+}
+
+/* Logo/Title */
+.register-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #1877f2; /* Facebook blue */
+  margin-bottom: 25px;
+}
+
+/* Registration Box */
+.register-box {
+  background: white;
+  padding: 30px;
+  border-radius: 20px; /* Fully rounded */
+  border: 1px solid #bfc9db; /* Brighter gray border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  text-align: center;
+  width: 100%;
+}
+
+/* Labels */
+.register-box label {
+  font-weight: bold;
+  color: #333; /* Dark gray for readability */
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Input Fields */
+.register-input,
+.register-select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border: 1px solid #bfc9db; /* Brighter border */
+  border-radius: 12px; /* Rounded */
+  font-size: 16px;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Input Focus */
+.register-input:focus,
+.register-select:focus {
+  border-color: #1877f2; /* Facebook blue */
+  box-shadow: 0 0 8px rgba(24, 119, 242, 0.2);
+  outline: none;
+}
+
+/* Clubs Dropdown */
+.register-select {
+  appearance: none; /* Removes default arrow */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="%231877f2"><path d="M7 10l5 5 5-5z"/></svg>')
+    no-repeat right 12px center;
+  background-size: 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.register-button {
+  background: #1877f2; /* Facebook blue */
+  color: white;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px; /* Rounded */
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+/* Button Hover */
+.register-button:hover {
+  background: #166fe5; /* Slightly darker blue */
+  transform: scale(1.02);
+}
+
+/* Button Click */
+.register-button:active {
+  transform: scale(0.98);
+}
+
+/* Link below the button */
+.register-link {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile-Friendly */
+@media (max-width: 500px) {
+  .register-container {
+    width: 90%;
+  }
+}

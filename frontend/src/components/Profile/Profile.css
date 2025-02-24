@@ -1,0 +1,87 @@
+/* Profile Page Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Profile Card - Side by Side Layout */
+.profile-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    /* Adjust width as needed */
+}
+
+/* Left Section (Profile Photo) */
+.profile-photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin-bottom: 10px;
+}
+
+/* Edit Photo Button */
+.edit-photo-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.edit-photo-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Right Section (User Details) */
+.profile-details {
+    flex: 1;
+    /* Takes remaining space */
+}
+
+.profile-details h2 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.profile-details p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Responsive Design: Stack on small screens */
+@media (max-width: 600px) {
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-photo-container {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}

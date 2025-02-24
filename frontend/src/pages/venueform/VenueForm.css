@@ -1,0 +1,83 @@
+/* Venue Form Container */
+.venue-form {
+  height: 700px;
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* Section Titles */
+.venue-form h2,
+.venue-form h3 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.venue-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #003366;
+}
+
+/* Input Fields */
+.venue-form input,
+.venue-form select,
+.venue-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #003366;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Multi-checkbox inputs */
+.venue-form .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.venue-form .checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: normal;
+}
+
+/* Checkbox Styling */
+.venue-form input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+/* Button */
+.venue-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0057b8;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.venue-form button:hover {
+  background-color: #003366;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .venue-form {
+    width: 90%;
+  }
+}
